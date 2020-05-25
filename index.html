@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Peter's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="js/bootstrap-3.3.2-dist/css/bootstrap.min.css">
+  <script src ="js/parallax.js-1.5.0/parallax.min.js"></script>
+  <script src ="js/parallax.js-1.5.0/parallax.js"></script>
+  <script src ="js/index.js"></script>
+
+  <style>
+    .parallax-window {
+    min-height: 400px;
+    background: transparent;
+    }
+  </style>
+
+  <script>
+  $ ( window ). on ( 'resize' , function () {
+if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+      $('#ios-notice').removeClass('hidden');
+      $('.parallax-container').height( $(window).height() * 0.5 | 0 );
+    } else {
+      $(window).resize(function(){
+        var parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0;
+        $('.parallax-container').height(parallaxHeight);
+      }).trigger('resize');
+    }
+  });
+//     $(function(){
+//       if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+//   if (this.iosFix) {
+//     if (!this.imageSrc) {
+//       var img = this.$element.find('>.parallax-slider>img');
+//       if (img.length == 1) {
+//         this.imageSrc = img[0].currentSrc || img.attr('src');
+//         this.$element.find('>.parallax-slider').remove();
+//       }
+//     }
+//     if (this.imageSrc && this.androidFix && !this.$element.is('img')) {
+//       this.$element.css({
+//         backgroundImage: 'url(' + this.imageSrc + ')',
+//         backgroundSize: 'cover',
+//         backgroundPosition: this.position
+//       });
+//     }
+//   }
+//   return this;
+// }
+
+//   if (navigator.userAgent.match(/(Android)/)) {
+//     if (this.androidFix) {
+//       if (!this.imageSrc) {
+//         var img = this.$element.find('>.parallax-slider>img');
+//         if (img.length == 1) {
+//           this.imageSrc = img[0].currentSrc || img.attr('src');
+//           this.$element.find('>.parallax-slider').remove();
+//         }
+//       }
+//       if (this.imageSrc && this.androidFix && !this.$element.is('img')) {
+//         this.$element.css({
+//           backgroundImage: 'url(' + this.imageSrc + ')',
+//           backgroundSize: 'cover',
+//           backgroundPosition: this.position
+//         });
+//       }
+//     }
+//     return this;
+//   }
+//     });
+  </script>
+</head>
+
+<body>
+<!-- particles.js container -->
+<div id="particles-js">
+  <div class="content" itemtype="http://schema.org/Person"><br/><br/><br/><br/>
+    <h1 style="font-size: 35px; font-weight: bold;">
+      <div class="site-title" itemprop="name">
+      <a href="https://skrevolve.github.io/test/" style="text-decoration:none;color:#fff">Seokyu Lim(Peter)</a></div>
+      <div class="site-description" id="site-desc" itemprop="jobTitle">Web Developer</div>
+    </h1><br/><br/>
+
+    <div class="icons-header" style="font-size: 27px;">
+     <a aria-label="Send email" href="mailto:sukyu0919@naver.com">
+       <i class="icon fa fa-envelope" style="text-decoration:none;color:#fff"></i></a>&nbsp;
+     <a aria-label="My Facebook" target="_blank" href="https://www.facebook.com/profile.php?id=100001858814961">
+       <i class="icon fa fa-facebook-square" aria-hidden="true" style="text-decoration:none;color:#3B5998"></i></a>&nbsp;
+     <a aria-label="My Instagram" target="_blank" href="https://www.instagram.com/limseokyu/?hl=ko">
+       <i class="icon fa fa-instagram" aria-hidden="true"></i></a>&nbsp;
+     <a aria-label="My Github" target="_blank" href="https://github.com/skrevolve/test">
+      <i class="icon fa fa-github-alt" aria-hidden="true" style="text-decoration:none;color:black"></i></a>&nbsp;
+    </div><br/><br/>
+
+    <div><a class="link" href="https://github.com/skrevolve/test" style="font-size: 15px; font-weight: bold; text-decoration:none;color:#fff">Blog</a></div><br/>
+    <div><a class="link" id="GoToabout1" data-scroll="" style="font-size: 15px; font-weight: bold; text-decoration:none;color:#fff">About Me</a></div><br/>
+    <div><a class="link" id="GoToskills" data-scroll="" style="font-size: 15px; font-weight: bold; text-decoration:none;color:#fff">Skills</a></div><br/>
+    <div><a class="link" id="GoToprojects" data-scroll="" style="font-size: 15px; font-weight: bold; text-decoration:none;color:#fff">Projects</a></div><br/>
+    <div><a class="down" id="GoToabout2"  data-scroll="" style="font-size: 20px; text-decoration:none;color:#fff">
+      <i class="icon fa fa-chevron-down" aria-hidden="true"></i></a></div>
+  </div>
+</div>
+<!-- particles.js container end-->
+<!-- scripts -->
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+<!-- scripts end-->
+
+<!-- about-->
+<div class="container" id="about" width="779" height="667" style="width: 100%; height: 100%;">
+  <div id="ios-notice" class="alert alert-info hidden"><p><strong>Notice:</strong> Hello mobile user. Unfortunately, this parallax effect is not reliably achieved on mobile devices, so all you will see on this demo page are static backgrounds.  Please visit this page on a desktop browser to see its full effect.</p></div>
+  <div style="text-align: center;">
+    <br/><h2>About Peter</h2>
+  </div><br/>
+
+    <div style="text-align: center;">
+        <img src="img/images.png" style="width: auto; height: auto;">
+    </div><br/>
+
+  <div>
+    <div style="text-align: center; font-weight: bold;">
+      <p>South Korea / Seoul / 29</p><br/>
+      <p>sukyu0919@naver.com</p><br/>
+      <p>웹 백엔드 개발자 | 신입 개발자</p>
+      <p>노력하는 개발자 | 협업이 능통한 개발자</p>
+      <br/>
+      <h4>"Motto"</h4><br/>
+      <ul>
+        <li style="font-weight: bold;">
+          <i class="fa fa-quote-left"></i> 어려운 것은 있어도 안되는 것은 없다.<i class="fa fa-quote-right"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- end of about-->
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/test.jpg"></div>
+<!-- skills-->
+<div class="container" id="skills">
+    <h2 style="text-align: center;"><b>Language</b></h2><br/>
+    <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+      <div><a>
+      <img src="img/c.jpg" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+      </a><h4>C</h4></div>
+    </div>
+
+    <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+      <div><a>
+      <img src="img/csharp.png" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+      </a><h4>C#</h4></div>
+    </div>
+
+    <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+      <div><a>
+      <img src="img/java.png" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+      </a><h4>Java</h4></div>
+    </div>
+
+    <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+      <div><a>
+      <img src="img/jsp.png" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+      </a><h4>JSP</h4></div>
+    </div>
+
+    <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+      <div><a>
+      <img src="img/php.png" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+      </a><h4>PHP</h4></div>
+    </div>
+
+    <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+      <div><a>
+      <img src="img/html.png" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+      </a><h4>HTML</h4></div>
+    </div>
+
+    <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+      <div><a>
+      <img src="img/css3.png" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+      </a><h4>CSS</h4></div>
+    </div>
+
+    <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+      <div><a>
+      <img src="img/js.png" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+      </a><h4>JavaScript</h4></div>
+    </div>
+
+    <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+      <div><a>
+      <img src="img/jquery.jpg" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+      </a><h4>jQuery</h4></div>
+    </div>
+</div>
+<div class="container">
+<div name="Framework">
+    <h2 style="text-align: center;"><b>Framework</b></h2><br/>
+    <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+      <div><a>
+      <img src="img/bootstrap.png" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+      </a><h4>BootStrap</h4></div>
+    </div>
+    <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+      <div><a>
+      <img src="img/Spring.png" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+      </a><h4>Spring</h4></div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div name="osdatabase">
+      <h2 style="text-align: center;"><b>OS/Database/Server</b></h2><br/>
+      <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+        <div><a>
+        <img src="img/linux.png" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+        </a><h4>Linux</h4></div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+        <div><a>
+        <img src="img/window.png" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+        </a><h4>Windows</h4></div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+        <div><a>
+        <img src="img/centos.png" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+        </a><h4>CentOs</h4></div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+        <div><a>
+        <img src="img/backtrack.jpg" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+        </a><h4>BackTrack</h4></div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+        <div><a>
+        <img src="img/mysql.png" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+        </a><h4>Mysql DB</h4></div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+        <div><a>
+        <img src="img/oracle.jpg" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+        </a><h4>Oracle DB</h4></div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+        <div><a>
+        <img src="img/mariadb.png" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+        </a><h4>Maria DB</h4></div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+        <div><a>
+        <img src="img/windowserver.png" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+        </a><h4>WinServerR2</h4></div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+        <div><a>
+        <img src="img/sqlite.png" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+        </a><h4>SQLite</h4></div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+        <div><a>
+        <img src="img/ApacheTomcat.png" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+        </a><h4>ApacheTomcat</h4></div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+        <div><a>
+        <img src="img/apache.jpg" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+        </a><h4>Apache</h4></div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div name="tools">
+      <h2 style="text-align: center;"><b>Util & Tools</b></h2><br/>
+      <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+        <div><a>
+        <img src="img/Wireshark.jpg" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+        </a><h4>Wireshark</h4></div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+        <div><a>
+        <img src="img/gns3.png" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+        </a><h4>GNS3</h4></div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+        <div><a>
+        <img src="img/ollydbg.png" style="width: 100px; height: 100px; border-radius: 20px; border : 1.3px black; box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2); margin-left: 7px; margin-right: 7px; margin-bottom: 0px;">
+        </a><h4>Ollydbg</h4></div>
+      </div>
+    </div>
+  </div><br/><br/>
+<!--end of skills-->
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/test.jpg"></div>
+<!-- projects-->
+<section id="projects" width="779" height="667" style="width: 100%; height: 100%;">
+  <div class="container">
+    <div style="text-align: center;">
+      <br/><h2>Projects</h2>
+    </div><br/>
+    <div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;">
+    </div>
+  </div>
+</section>
+<!--end of projects-->
+
+</body>
+</html>
