@@ -23,7 +23,8 @@ $(document).ready(function(){
         var offset = $('#projects').offset();
         $('html').animate({scrollTop : offset.top}, 500);
 	});
-
+	
+	//Parallax 옵션 설정
 	$('.parallax-window').parallax({imageSrc: 'img/test.jpg',iosFix: false,androidFix: false});
 
 	// $('.parallax-window').parallax({imageSrc: 'img/test.jpg'});
