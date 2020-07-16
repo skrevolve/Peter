@@ -1,11 +1,15 @@
 $(document).ready(function(){
 
 	//about 페이지 이동 이벤트
-    $('#GoToabout1').click(function(){
+    	$('#GoToabout1').click(function(){
         var offset = $('#about').offset(); //선택한 태그의 위치를 반환
         $('html').animate({scrollTop : offset.top}, 500);
 	});
 	
+	//Blog 페이지 이동 이벤트
+	$('#GoToBlog').click(function(){
+	href="https://github.com/skrevolve"
+	}
 	//about 페이지 이동 이벤트(하단 화살표)
 	$('#GoToabout2').click(function(){
         var offset = $('#about').offset();
